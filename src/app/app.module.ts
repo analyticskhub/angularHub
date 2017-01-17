@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 
 //import the routing 
 import { routing, appRoutingProviders } from './app.routes';
+import { ContainerComponent } from './commons/container/container.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { routing, appRoutingProviders } from './app.routes';
     AppComponent,
     HeaderComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

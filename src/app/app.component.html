@@ -1,4 +1,11 @@
-<h1>
-  {{title}}
-</h1>
-  <router-outlet></router-outlet>
+<div id="page-wrapper" [ngClass]="{'open': toggle}">
+  
+<!-- Nav component here -->
+  <app-nav>
+    <a (click)="toggleSidebar()">Dashboard<span class="menu-icon glyphicon glyphicon-transfer"></span></a>
+  </app-nav>
+          <app-container>
+      <router-outlet></router-outlet>
+        </app-container>
+
+</div><!-- End Page Wrapper -->
